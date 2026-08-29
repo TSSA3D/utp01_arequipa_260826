@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>UTP AREQUIPA 26-08-2026</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.167.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.167.1/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         TÍTULO
+    ====================================================== -->
+
+    <div id="titulo">
+        UTP AREQUIPA 26-08-2026
+    </div>
+
+    <!-- =====================================================
+         HERRAMIENTAS
+    ====================================================== -->
+
+    <div id="herramientas">
+
+        <button id="btnMedir">
+            📏 Medir distancia
+        </button>
+
+        <button id="btnArea">
+            📐 Medir área
+        </button>
+
+        <button id="btnEditar">
+            ✋ Editar puntos
+        </button>
+
+        <button id="btnEliminar">
+            🗑 Eliminar seleccionada
+        </button>
+
+        <button id="btnLimpiar">
+            🧹 Limpiar todo
+        </button>
+
+        <button id="btnDeshacer">
+            ↶ Deshacer eliminación
+        </button>
+
+        <div id="ayudaMedicion">
+
+            <strong>Controles</strong>
+
+            <span>ESC → quitar último punto</span>
+
+            <span>CTRL + Z → deshacer</span>
+
+            <span>Editar → arrastrar punto</span>
+
+            <span>Área → puntos en orden de clic</span>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+         LISTA DE MEDICIONES
+    ====================================================== -->
+
+    <div id="listaMediciones">
+
+        <div class="tituloMediciones">
+            MEDICIONES
+        </div>
+
+        <div id="sinMediciones">
+            No hay mediciones
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+         ESTADO DE EDICIÓN
+    ====================================================== -->
+
+    <div id="estadoEdicion">
+        EDITAR PUNTOS: SELECCIONA Y ARRASTRA UN PUNTO
+    </div>
+
+    <!-- =====================================================
+         BOTÓN INFORMACIÓN
+    ====================================================== -->
+
+    <button id="btnInfo">
+        ☰
+    </button>
+
+    <!-- =====================================================
+         PANEL DE INFORMACIÓN
+    ====================================================== -->
+
+    <div id="panelInfo">
+
+        <div class="panelTitulo">
+            INFORMACIÓN DEL PROYECTO
+        </div>
+
+        <div class="dato">
+
+            <span>Proyecto</span>
+
+            <strong>
+                Plaza Vea Ayacucho
+            </strong>
+
+        </div>
+
+        <div class="dato">
+
+            <span>Fecha</span>
+
+            <strong>
+                13-08-2026
+            </strong>
+
+        </div>
+
+        <div class="dato">
+
+            <span>Producto</span>
+
+            <strong>
+                Modelo 3D
+            </strong>
+
+        </div>
+
+        <div class="dato">
+
+            <span>Tipo</span>
+
+            <strong>
+                Levantamiento fotogramétrico
+            </strong>
+
+        </div>
+
+        <div class="dato">
+
+            <span>Procesamiento</span>
+
+            <strong>
+                Modelo optimizado
+            </strong>
+
+        </div>
+
+        <hr>
+
+        <div class="panelTitulo">
+            VISUALIZACIÓN
+        </div>
+
+        <button id="btnGrilla">
+            Grilla
+        </button>
+
+        <button id="btnEjes">
+            Ejes XYZ
+        </button>
+
+        <button id="btnCentrar">
+            Centrar modelo
+        </button>
+
+        <button id="btnVista">
+            Vista inicial
+        </button>
+
+        <button id="btnFullscreen">
+            Pantalla completa
+        </button>
+
+    </div>
+
+    <!-- =====================================================
+         SCRIPT
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="script.js"
+    ></script>
+
+</body>
+
+</html>
